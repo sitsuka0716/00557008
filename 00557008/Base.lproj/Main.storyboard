@@ -1,24 +1,1594 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RFF-2l-Omt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="AVF-5Y-sOU">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tabBarController id="RFF-2l-Omt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" id="49X-La-eC9"/>
+                    <navigationItem key="navigationItem" id="1wC-Tq-Tq4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7i7-sb-tN0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9Ap-ol-to5" kind="relationship" relationship="viewControllers" id="btj-lp-hD3"/>
+                        <segue destination="Jfd-g4-ByL" kind="relationship" relationship="viewControllers" id="E5i-rh-TMf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Eg-mN-lvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3690" y="-1013"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="IwP-vD-Wmv">
+            <objects>
+                <tableViewController storyboardIdentifier="character_table" id="PqW-1S-zIh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IDB-Ho-6Hf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="qcd-SQ-gBy">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="86" id="1Cf-RG-bhT">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Cf-RG-bhT" id="nId-9w-LSB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小雅(小)" translatesAutoresizingMaskIntoConstraints="NO" id="n5Y-QK-uZv">
+                                                    <rect key="frame" x="158" y="9" width="113" height="67"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="tuQ-iW-uyo">
+                                                    <rect key="frame" x="75" y="15" width="53" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ssr" translatesAutoresizingMaskIntoConstraints="NO" id="0PI-Ym-qpn">
+                                                    <rect key="frame" x="7" y="18" width="60" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AST-bn-bkI" kind="show" id="0P3-dh-0Ds"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="86" id="yy5-Tm-4ii">
+                                        <rect key="frame" x="0.0" y="86" width="375" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yy5-Tm-4ii" id="7f5-I6-ktV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="son_s" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-DK-aYx">
+                                                    <rect key="frame" x="158" y="9" width="113" height="67"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="yd6-IL-sxc">
+                                                    <rect key="frame" x="75" y="15" width="53" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ssr" translatesAutoresizingMaskIntoConstraints="NO" id="uZt-hX-dDG">
+                                                    <rect key="frame" x="7" y="18" width="60" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4SE-lY-zcn" kind="show" id="pZA-sO-YIU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="86" id="WSB-lp-Ptz">
+                                        <rect key="frame" x="0.0" y="172" width="375" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WSB-lp-Ptz" id="b4p-Sw-Sd4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chan_s" translatesAutoresizingMaskIntoConstraints="NO" id="vRy-0G-q9P">
+                                                    <rect key="frame" x="158" y="9" width="113" height="67"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="kqL-cD-YAj">
+                                                    <rect key="frame" x="75" y="15" width="53" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ssr" translatesAutoresizingMaskIntoConstraints="NO" id="36b-AV-bop">
+                                                    <rect key="frame" x="7" y="18" width="60" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0o6-SA-UpS" kind="show" id="7P5-pD-4t0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="86" id="fdc-vD-PP7">
+                                        <rect key="frame" x="0.0" y="258" width="375" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fdc-vD-PP7" id="gkJ-WN-vMH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_s" translatesAutoresizingMaskIntoConstraints="NO" id="rZv-ct-2kW">
+                                                    <rect key="frame" x="158" y="9" width="113" height="67"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="8uv-Ox-qdS">
+                                                    <rect key="frame" x="75" y="15" width="53" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ssr" translatesAutoresizingMaskIntoConstraints="NO" id="iMN-iK-teK">
+                                                    <rect key="frame" x="7" y="18" width="60" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BgC-AH-ZlK" kind="show" id="JfN-3E-GiD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="86" id="eTT-3W-PoH">
+                                        <rect key="frame" x="0.0" y="344" width="375" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eTT-3W-PoH" id="P1a-qg-riJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ban_s" translatesAutoresizingMaskIntoConstraints="NO" id="WDU-Cl-l2g">
+                                                    <rect key="frame" x="158" y="9" width="113" height="67"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dark" translatesAutoresizingMaskIntoConstraints="NO" id="uoj-ld-zlw">
+                                                    <rect key="frame" x="75" y="15" width="53" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ssr" translatesAutoresizingMaskIntoConstraints="NO" id="5Hr-LK-LgC">
+                                                    <rect key="frame" x="7" y="18" width="60" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JKh-Jx-jTY" kind="show" id="wDe-z2-8cp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="86" id="fFF-DV-qQF">
+                                        <rect key="frame" x="0.0" y="430" width="375" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fFF-DV-qQF" id="pTT-5Q-jER">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="med" translatesAutoresizingMaskIntoConstraints="NO" id="hx5-v0-mUo">
+                                                    <rect key="frame" x="158" y="9" width="113" height="67"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="MRd-cd-OOH">
+                                                    <rect key="frame" x="75" y="15" width="53" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ssr" translatesAutoresizingMaskIntoConstraints="NO" id="S1l-96-ZUj">
+                                                    <rect key="frame" x="7" y="18" width="60" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KS1-Mc-Ji7" kind="show" id="jdR-S7-CvJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </variation>
+                        <connections>
+                            <outlet property="dataSource" destination="PqW-1S-zIh" id="Ffc-J1-iR4"/>
+                            <outlet property="delegate" destination="PqW-1S-zIh" id="VoX-Di-BIX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="hMD-Ox-WmZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YiM-DR-612" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962.39999999999998" y="-1836.4317841079462"/>
+        </scene>
+        <!--CHARACTER-->
+        <scene sceneID="jU2-sE-1hU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Ap-ol-to5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CHARACTER" id="3OK-cw-0mN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PYK-rc-qKY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PqW-1S-zIh" kind="relationship" relationship="rootViewController" id="LRh-zr-bqt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gY-oM-xdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2374" y="-1835"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="G3H-Y1-iyH">
+            <objects>
+                <tableViewController id="AST-bn-bkI" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hb7-7s-9yj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="q2y-gt-Lgx">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="336" id="RfZ-zZ-vhU">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="336"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RfZ-zZ-vhU" id="k5b-04-bye">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="335.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小雅(大)" translatesAutoresizingMaskIntoConstraints="NO" id="gNf-fy-pbV">
+                                                    <rect key="frame" x="16" y="11" width="324" height="304"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="L2f-eh-rlK">
+                                        <rect key="frame" x="0.0" y="336" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L2f-eh-rlK" id="BmK-x1-Y1x">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6ad-2h-bwy">
+                                                    <rect key="frame" x="16" y="5" width="350" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">ミネルヴァ・スラスト :  火屬性傷害(特大)/我方全體火屬性攻擊UP/格擋效果[強化]我方全體風屬性cut(40%)，1回合
+[倍率]4.5倍
+[強化]我方全體火屬性攻擊UP(15%)，4回合(含奧義回)
+[強化]我方全體格擋效果，70%機率減輕30%傷害，4回合(含奧義回)</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="O3c-s4-Fy1">
+                                        <rect key="frame" x="0.0" y="431" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O3c-s4-Fy1" id="iSD-cg-DU4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Geg-DD-8rU">
+                                                    <rect key="frame" x="16" y="8" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">神盾アイギス :  我方全體風屬性cut(40%)/受到的傷害屬性轉為風屬性/再生效果 [強化]我方全體風屬性cut(40%)，1回合
+[效果]我方全體受到的傷害屬性轉為風屬性，3回合
+[強化]我方全體再生效果，每回合10%生命回復，上限400，3回合</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="OuD-rs-YT2">
+                                        <rect key="frame" x="0.0" y="526" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OuD-rs-YT2" id="6Uk-YM-DBg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yF3-lT-H67">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">テトラドラクマ:  亂數單體5次火屬性傷害/敵全體防禦down(累積)/灼熱效果
+◆根據女神之怒的Lv，傷害次數UP[強化]我方全體風屬性cut(40%)，1回合
+[倍率]每下1倍，總和5倍，最大約10倍
+[上限]每下約12萬，總和約60萬，最大約120萬
+[弱體]敵全體防禦down(累積，10%，上限40%)
+　[命中]約90%
+[弱體]敵全體灼熱效果，每回合扣除敵方5%HP，上限5000
+　[命中]約90%
+[特殊]根據女神之怒的Lv増加攻擊次數，最大10次</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="Bs1-9B-khH">
+                                        <rect key="frame" x="0.0" y="621" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bs1-9B-khH" id="HZO-NL-ocC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eKD-Ql-bxY">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">マティティス・グラウクス:  敵全體二連擊率down/暗闇效果/slow效果 [強化]我方全體風屬性cut(40%)，1回合
+[弱體]敵全體二連擊率down(-100%)
+　[命中]約80%
+[弱體]敵全體暗闇效果，普通攻擊30%機率MISS
+　[命中]約90%
+[弱體:敵全體slow效果，CT珠-1
+　[命中]100%</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="AST-bn-bkI" id="Q1E-sU-UrL"/>
+                            <outlet property="delegate" destination="AST-bn-bkI" id="S3c-gv-4VO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYc-U1-sTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-3131"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="tGx-28-THD">
+            <objects>
+                <tableViewController id="4SE-lY-zcn" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aJb-tw-bwM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="Gtv-MJ-Dke">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="336" id="MPO-RC-cmn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="336"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MPO-RC-cmn" id="nc5-1T-0rt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="335.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="song" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-km-Whc">
+                                                    <rect key="frame" x="16" y="11" width="324" height="304"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="FyW-cM-Nem">
+                                        <rect key="frame" x="0.0" y="336" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FyW-cM-Nem" id="xzt-fr-Tdy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fhh-pw-zdV">
+                                                    <rect key="frame" x="16" y="5" width="350" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">ミネルヴァ・スラスト :  火屬性傷害(特大)/我方全體火屬性攻擊UP/格擋效果[強化]我方全體風屬性cut(40%)，1回合
+[倍率]4.5倍
+[強化]我方全體火屬性攻擊UP(15%)，4回合(含奧義回)
+[強化]我方全體格擋效果，70%機率減輕30%傷害，4回合(含奧義回)</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="C5Y-Zl-x5G">
+                                        <rect key="frame" x="0.0" y="431" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C5Y-Zl-x5G" id="1xi-yY-oI8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PiM-Kt-WBG">
+                                                    <rect key="frame" x="16" y="8" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">マーキュライト:  自身分身效果攻擊UP強化(50%)/追加自身技能傷害上限UP [強化]自身分身效果，迴避所有攻擊與弱體狀態，持續1回合
+[強化]自身攻刃+50%，兩面類，持續3回合
+[強化]自身的技能傷害上限+30%，持續3回合</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="sO0-zd-NMm">
+                                        <rect key="frame" x="0.0" y="526" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sO0-zd-NMm" id="ChQ-GG-68k">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ディプラヴィティ:  敵全體各種弱體效果/即死效果" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kr7-q7-TJ1">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="71i-35-cXA">
+                                        <rect key="frame" x="0.0" y="621" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71i-35-cXA" id="jYd-yD-RF0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AFH-xE-luO">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">クリンチャー:  根據敵方弱體效果數量給予光屬性傷害 [特殊]根據敵人的數量，倍率與上限變動
+　3體時
+　　[倍率]2倍+0.8*弱體數量，最大10倍
+　　[上限]約70萬
+　2體時
+　　[倍率]2.5倍+1*弱體數量，最大12.5倍
+　　[上限]約82萬
+　1體時
+　　[倍率]3倍+1.2*弱體數量，最大15倍
+　　[上限]約120萬
+[弱體]如果身上有"殲雷的鏑矢"，則追加麻痺效果，持續60秒
+　[命中]約55%</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="4SE-lY-zcn" id="wYh-Jr-gwC"/>
+                            <outlet property="delegate" destination="4SE-lY-zcn" id="qb5-PP-TcZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzp-ux-w9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="-3132"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="nbO-Yl-Zqp">
+            <objects>
+                <tableViewController id="BgC-AH-ZlK" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c8f-6h-ewd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="WbM-Ji-uSq">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="336" id="Jmc-Gy-kYg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="336"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jmc-Gy-kYg" id="Po7-mT-3jM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="335.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="umd-Zr-zmi">
+                                                    <rect key="frame" x="16" y="11" width="324" height="304"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="1Zb-Vf-4xi">
+                                        <rect key="frame" x="0.0" y="336" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Zb-Vf-4xi" id="jg2-qD-EZY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LFO-VV-PD4">
+                                                    <rect key="frame" x="16" y="5" width="350" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">金牙神然:  水屬性傷害(特大)/我方全體性能強化(累積效果UP)
+[倍率]5倍
+[強化]我方全體性能強化(累積效果UP)，持續6回合，不可消除
+　根據奧義的次數獲得累積效果:
+　第1層: 我方全體攻刃+30%
+　第2層: 追加我方全體防禦+30%
+　第3層: 追加我方全體奧義上升速度+10%
+　第4層: 追加我方全體奧義傷害+30%
+　第5層: 追加我方全體傷害上限+10%</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="HOK-Wt-pJU">
+                                        <rect key="frame" x="0.0" y="431" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HOK-Wt-pJU" id="h9s-Ig-8Fk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B1x-fn-1Nd">
+                                                    <rect key="frame" x="16" y="8" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">大口真神:  敵全體水屬性傷害/弱體耐性down(累積) [倍率]3倍
+[上限]約42萬
+[弱體]敵全體弱體耐性down(累積，10%，上限30%)
+　[命中]大幅超過100%(約200%)</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="1kS-ja-vVM">
+                                        <rect key="frame" x="0.0" y="526" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1kS-ja-vVM" id="dA7-eH-zzc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qnf-mN-ewi">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">犬牙相制:  敵單體恐怖效果
+[弱體]敵恐怖效果，行動時不加CT珠
+　[命中]80%</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="0PS-LQ-jb2">
+                                        <rect key="frame" x="0.0" y="621" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0PS-LQ-jb2" id="yf5-OW-j1y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mYV-eC-dGR">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">飛鷹走狗: 自身二次行動效果/攻擊時狗會追加一發技能傷害
+◆使用消耗30點奧義 [強化]自身二次行動效果，回合經過時可攻擊兩次
+[強化]呼叫愛犬卡魯加吶一起戰鬥，每次攻擊後追加一次技能傷害
+　[狗傷害倍率]3倍
+　[狗傷害上限]31萬</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="BgC-AH-ZlK" id="Fry-K1-H8f"/>
+                            <outlet property="delegate" destination="BgC-AH-ZlK" id="wg3-0b-g7f"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5x9-C2-MpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-2427"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="qC4-Xj-6Yl">
+            <objects>
+                <tableViewController id="0o6-SA-UpS" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Df-8b-HAs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="D3A-9f-UW6">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="336" id="8hX-uJ-klf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="336"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8hX-uJ-klf" id="iQ6-a9-Jcw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="335.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chan'" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-LD-WI8">
+                                                    <rect key="frame" x="16" y="11" width="324" height="304"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="8mK-qS-1rm">
+                                        <rect key="frame" x="0.0" y="336" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8mK-qS-1rm" id="lzT-X1-fgD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kkQ-dh-AdZ">
+                                                    <rect key="frame" x="16" y="5" width="350" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">神槍マルテ :  光屬性傷害(特大)/自身光屬性攻擊UP
+[倍率]5倍
+[強化]自身光屬性攻擊UP(25%)，持續3回合(含奧義回)</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="0v3-3N-z12">
+                                        <rect key="frame" x="0.0" y="431" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0v3-3N-z12" id="3gQ-4e-RNB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Q2-hS-rfw">
+                                                    <rect key="frame" x="16" y="8" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">リヴァーサル:  敵單體防禦down/敵單體攻擊down [弱體]敵單體防禦down(25%)，片面類
+　[命中]約90%
+[弱體]敵單體攻擊down(20%)，片面類
+　[命中]約65%</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="prT-kb-izg">
+                                        <rect key="frame" x="0.0" y="526" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="prT-kb-izg" id="IUA-hP-KUt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Eb0-uh-EMb">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">エンカレッジメント  我方全體攻擊UP(30%)
+[強化]我方全體攻刃+30%，片面類</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="sDx-eS-sZA">
+                                        <rect key="frame" x="0.0" y="621" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sDx-eS-sZA" id="Dug-jQ-JrZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wCv-pE-Ip7">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">アドヴェント・エターナル:  效果內自身必定三連擊/追加自身強壯效果 [強化]自身必定TA，兩面類，2回合
+[強化]自身強壯效果，隨HP百分比攻擊倍率UP(30%~10%)</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0o6-SA-UpS" id="cb5-oP-tm7"/>
+                            <outlet property="delegate" destination="0o6-SA-UpS" id="yYb-rg-fJt"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BsL-Aa-1ee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-3133"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Qbb-ef-jOr">
+            <objects>
+                <tableViewController id="KS1-Mc-Ji7" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="P4Q-vV-hSO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="Lyl-dX-lBo">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="336" id="CdJ-qv-iFZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="336"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CdJ-qv-iFZ" id="leh-ii-Y2a">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="335.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mea" highlightedImage="mea" translatesAutoresizingMaskIntoConstraints="NO" id="WeX-fL-MrH">
+                                                    <rect key="frame" x="16" y="11" width="324" height="304"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="rFV-Il-RDA">
+                                        <rect key="frame" x="0.0" y="336" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rFV-Il-RDA" id="7wa-Eu-Qcv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ylO-ab-Og6">
+                                                    <rect key="frame" x="16" y="5" width="350" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">ペトリファクトグランス :  土屬性傷害(特大)/敵單體魔眼的石化效果(1~2回合)
+[倍率]4.5倍
+[弱體]敵魔眼的石化效果，隨機2~3回合(含奧義回)
+　[命中]約90%</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="LWv-4x-tlI">
+                                        <rect key="frame" x="0.0" y="431" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LWv-4x-tlI" id="dZu-Rq-Tl9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-j8-HJr">
+                                                    <rect key="frame" x="16" y="8" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">イービル・アイ :  敵單體魔眼的石化效果(2~3回合隨機)屬性cut(40%)，1回合
+[弱體]敵魔眼的石化效果，隨機2~3回合
+　[命中]約70%</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="B3R-Eb-hSe">
+                                        <rect key="frame" x="0.0" y="526" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B3R-Eb-hSe" id="eY0-d6-E6j">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RZV-7Q-B8t">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">リベンジ・アイ: 自身全反擊效果(4次)
+[上限]每下約12萬，總和約60萬，最大約120萬
+[強化]自身全反擊效果(4次)，持續3回合
+　[倍率]2倍
+　[上限]約44萬</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="4uh-Cl-yAj">
+                                        <rect key="frame" x="0.0" y="621" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4uh-Cl-yAj" id="1lu-eC-vGA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="リーサル・アイ:  效果內自身必定三連擊 [強化]自身必定TA，兩面類，持續2回合" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CAM-XS-1Gn">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="KS1-Mc-Ji7" id="YUk-nA-C0A"/>
+                            <outlet property="delegate" destination="KS1-Mc-Ji7" id="rAG-A4-JwB"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CqW-aQ-yqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-2427"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="dvs-SC-Hk6">
+            <objects>
+                <tableViewController id="JKh-Jx-jTY" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CMj-7M-hHM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="XKZ-IH-92K">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="336" id="5IS-fR-Hhl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="336"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5IS-fR-Hhl" id="xrS-an-pVd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="335.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ban" translatesAutoresizingMaskIntoConstraints="NO" id="S0c-VC-Z4M">
+                                                    <rect key="frame" x="16" y="11" width="324" height="304"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KG5-Ka-5YS">
+                                        <rect key="frame" x="0.0" y="336" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KG5-Ka-5YS" id="8dc-xx-X4j">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t8d-DN-2w5">
+                                                    <rect key="frame" x="16" y="5" width="350" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">ブラッディ・リファイメント :  闇屬性傷害(特大)
+◆隱藏效果:敵魅惑狀態時奧義傷害+50%
+[倍率]4.5倍
+[特殊]隱藏效果，無說明文字，在敵人魅惑狀態時，奧義傷害+50%</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="pUa-eQ-MM5">
+                                        <rect key="frame" x="0.0" y="431" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pUa-eQ-MM5" id="ui8-v2-2A8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J0j-MT-e7p">
+                                                    <rect key="frame" x="16" y="8" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">テスタメント:  敵單體闇屬性傷害/驅散敵人1個強化狀態/傷害倍率UP [倍率]3~5倍
+[上限]約63萬
+[效果]驅散敵方1個強化狀態</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="5Rc-vg-b7n">
+                                        <rect key="frame" x="0.0" y="526" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Rc-vg-b7n" id="Gd0-vS-DHi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jOM-Bm-Hv0">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">スカーレットギフト: 敵單體吸珠效果/若吸珠成功則我方全體奧義值+20 [弱體]敵單體吸珠效果，CT珠-1
+　[命中]100%
+　[效果]如果吸珠成功，則我方全體奧義值+20</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="uaI-9k-v65">
+                                        <rect key="frame" x="0.0" y="621" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uaI-9k-v65" id="pkR-wl-CPf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hQC-gn-p74">
+                                                    <rect key="frame" x="16" y="5" width="343" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">チャームスローブ:  [敵魅惑效果/自身攻擊UP/防禦UP/連擊率UP
+[弱體]敵單體魅惑狀態，發動率約35%
+　[命中]約80%
+[強化]自身攻刃+20%，防禦+20%，DA+20%，TA+10%，兩面類</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="JKh-Jx-jTY" id="iPl-tK-cHy"/>
+                            <outlet property="delegate" destination="JKh-Jx-jTY" id="hgc-2k-uEr"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYX-mi-dJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="-2427"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="66Z-DG-jua">
+            <objects>
+                <tableViewController id="JQY-8A-KTh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yGj-Wp-i8n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="bP3-lp-wgQ">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="91y-hk-szl">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="ndn-mL-J2p">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="169" id="x74-ZQ-Mwc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x74-ZQ-Mwc" id="tB2-3V-Pp9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="168.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="VeE-r5-kED">
+                                                    <rect key="frame" x="28" y="7" width="319" height="155"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WJh-e1-fYg" kind="show" id="MgB-Wu-GK4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="169" id="n4p-SN-Avp">
+                                        <rect key="frame" x="0.0" y="169" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n4p-SN-Avp" id="Ztk-lx-Ilg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="168.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fish" translatesAutoresizingMaskIntoConstraints="NO" id="Wew-To-7Lg">
+                                                    <rect key="frame" x="28" y="7" width="319" height="155"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Xp5-xG-rdO" kind="show" id="qZh-GM-g1u"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="i6C-fX-3s6">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="169" id="dbk-PR-oV9">
+                                        <rect key="frame" x="0.0" y="338" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dbk-PR-oV9" id="ePV-bZ-qUK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="168.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dr" translatesAutoresizingMaskIntoConstraints="NO" id="yt9-WN-aPo">
+                                                    <rect key="frame" x="28" y="7" width="319" height="155"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BOK-DP-VYR" kind="show" id="GTI-ER-wjl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="RRT-qa-IPh">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="169" id="hMC-Dv-3PK">
+                                        <rect key="frame" x="0.0" y="507" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hMC-Dv-3PK" id="yhu-3B-APU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="168.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boat" translatesAutoresizingMaskIntoConstraints="NO" id="Ypb-SJ-45H">
+                                                    <rect key="frame" x="28" y="7" width="319" height="155"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="XwU-pp-6Aa" kind="show" id="PgL-UT-2av"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="TkE-yl-zEk">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="169" id="pMJ-dV-vfa">
+                                        <rect key="frame" x="0.0" y="676" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pMJ-dV-vfa" id="AN1-Gh-a8R">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="168.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="so" translatesAutoresizingMaskIntoConstraints="NO" id="kLL-fd-lto">
+                                                    <rect key="frame" x="28" y="7" width="319" height="155"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Im9-9A-8sG" kind="show" id="hz8-TD-Klk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="CMb-X6-sAX">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="169" id="he8-JI-ZiZ">
+                                        <rect key="frame" x="0.0" y="845" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="he8-JI-ZiZ" id="Tt8-If-puK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="168.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lost" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-No-MHP">
+                                                    <rect key="frame" x="28" y="7" width="319" height="155"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="DyH-IN-VBp" kind="show" id="5cp-ZP-KIR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="NbC-f1-79c">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="HTn-Ju-uuY">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="5nC-y0-0wP">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="AlS-x8-g4p">
+                                <cells/>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="JQY-8A-KTh" id="FTv-qh-nbq"/>
+                            <outlet property="delegate" destination="JQY-8A-KTh" id="uTE-At-WAb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="i9J-ed-aeQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPF-oJ-yvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962.39999999999998" y="-761.46926536731644"/>
+        </scene>
+        <!--SIDE STORY-->
+        <scene sceneID="GK8-y6-6oo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jfd-g4-ByL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SIDE STORY" id="NNc-lz-TAh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mbj-A8-2MY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JQY-8A-KTh" kind="relationship" relationship="rootViewController" id="xmd-u8-uaU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kW3-MN-29s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2375" y="-761"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FSv-5K-l20">
+            <objects>
+                <viewController id="WJh-e1-fYg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dFq-G9-1QE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IN-1" translatesAutoresizingMaskIntoConstraints="NO" id="CO2-OI-RmU">
+                                <rect key="frame" x="24" y="38" width="335" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Wb-Rb-TtH">
+                                <rect key="frame" x="51" y="309" width="276" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">降焔祭───
+年に一度の恒例行事。
+
+ポート･ブリーズで開かれる
+その祭は、他の島からも
+大勢の観光客が訪れる名物行事である。
+
+ならず者、ギャンブラー等様々な人種が
+集う中、カジノ艇でのデュエルが行われる。
+
+祭がはじまる───</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cIv-hm-pkn"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAf-Bx-mJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-132" y="-1000"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Nte-YE-70w">
+            <objects>
+                <viewController id="DyH-IN-VBp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SGv-tW-gIN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOST-1" translatesAutoresizingMaskIntoConstraints="NO" id="wJK-rP-rIw">
+                                <rect key="frame" x="24" y="38" width="335" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vFT-aG-An4">
+                                <rect key="frame" x="53" y="264" width="276" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">災厄去りし空の世界で、
+人々は平穏な日々を享受する。
+だが突如、世界は薄闇に包まれ、
+暴れまわる星の獣達。
+
+困惑する空の民の前に現れたのは
+不思議な双子の天司達。
+
+天司達の口から告げられたのは、
+前人未到の地、『カナン』で起きた
+異変の調査依頼であった。
+
+天司達の二千年にわたる因縁を前に、
+空の世界の人々は、
+再び力を合わせて立ち向かう。
+
+次回、グランブルーファンタジー
+『失楽園』
+どうして空は蒼いのか Part.II</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1cN-ER-qi9">
+                                <rect key="frame" x="164" y="445" width="195" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">ねぇねぇ、ハーちゃん？
+
+なんだい、マーちゃん？
+
+ミカエル様はどうして特異点さん達を
+頼ることにしたのかな？
+
+さぁ？ボクも詳しくは知らないけど
+あの災厄の時にお世話になったそうじゃないか
+
+ふーん、そうなんだ
+でも、ミカエル様が言うなら確かなんだろうね
+
+ほら…見えてきた！
+もうすぐファータ･グランデ空域だ！
+
+懐かしい…。時間があったら観光していきたいわ！
+
+次回、グランブルーファンタジー
+『失楽園』
+どうして空は蒼いのか Part.II
+
+さぁ…急ごう！
+
+うん！</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOST_T" translatesAutoresizingMaskIntoConstraints="NO" id="3MV-fB-wji">
+                                <rect key="frame" x="24" y="445" width="129" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bXK-Tv-beW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8a9-wf-U7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="-992"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PXS-Bd-SOL">
+            <objects>
+                <viewController id="Im9-9A-8sG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hnK-SS-Q3j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SO_1" translatesAutoresizingMaskIntoConstraints="NO" id="O0w-dw-vIM">
+                                <rect key="frame" x="24" y="38" width="335" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-E2-3Fc">
+                                <rect key="frame" x="53" y="264" width="276" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">島々の落下──
+突如として全空を襲った、原因不明の災厄。
+人々は忍び寄る不安に、
+ただ祈るより他なかった。
+
+原初の星晶獣──
+災厄の背後には、
+歴史の闇に沈んでいた古の存在。
+幾千年の時を経て今、
+再び空の舞台に舞い降りた。
+
+そんな中、蒼の少女は立ち上がる。
+今こそ自分が役に立たなければ、と。
+今こそ世界と人々を守らなければ、と。
+
+次回、グランブルーファンタジー
+『どうして空は蒼いのか』
+
+乞う、ご期待！</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SO_T" translatesAutoresizingMaskIntoConstraints="NO" id="Vsj-aB-2mp">
+                                <rect key="frame" x="70" y="445" width="70" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uwZ-po-7VH">
+                                <rect key="frame" x="148" y="459" width="195" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">うぉううぉうぉうぉ、うぉううぉうぉー
+うぉううぉうぉうぉいえぃいえぃいえーぃ！
+
+うん、一番は出来上がりっ！
+じゃあ二番は歌詞を変えて…
+
+へいへいへいへいへーい…ひゃーあ！
+き、聞いてたんですか！？
+居るなら居るって言って下さいよー。
+
+実は…最近…その…
+みなさんと旅をする中で思ったんです。
+もっと私にできること無いかな―って。
+
+それでとりあえず応援歌を作りました！
+ちょっとでもみなさんが元気になるように。
+えーっと、他にも色々考えてて…
+
+次回、グランブルーファンタジー
+『どうして空は蒼いのか』
+
+あ、あなたの必殺技も考えたんですよ！
+いいですかぁ？せぇーのっ！
+『悪い子にはお仕置きだぞっ！
+ゴーゴー団長パーンチ！』
+
+えへへ、もし気に入ったら使って下さいね。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tRk-YT-HiV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRW-vl-4Sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="-991.75412293853083"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gzi-8G-E6J">
+            <objects>
+                <viewController id="Xp5-xG-rdO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hu7-N6-hTF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FISH_1" translatesAutoresizingMaskIntoConstraints="NO" id="afE-OK-MjQ">
+                                <rect key="frame" x="24" y="38" width="335" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-zR-e5Q">
+                                <rect key="frame" x="140" y="457" width="195" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">照りつける日差し…白い砂浜…
+そして、遥か広がる青い海！
+
+勇猛なる森の戦士は、
+仲間たちとともに
+ささやかなバカンスを堪能する！
+はずだったんだが…
+
+次回！グランブルーファンタジー
+「蒼海を征く暗黒巨大魚」
+
+間もなく開催！
+心して……待て！</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FISH_T" translatesAutoresizingMaskIntoConstraints="NO" id="lmm-0z-7oP">
+                                <rect key="frame" x="24" y="469" width="108" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gDD-Kr-XuB">
+                                <rect key="frame" x="49" y="284" width="276" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">訪れたのは
+陽光に恵まれ、豊かな水を湛えた島。
+戦いの日々をしばし忘れ
+水辺でひとときの休息を楽しむ。
+
+喜びの声を上げ砂浜に躍る仲間達。
+燦々と彼らを照らす日差しを遮ったのは
+巨大にして不吉な魚影であった。
+
+次回！グランブルーファンタジー
+「蒼海を征く暗黒巨大魚」
+
+ご期待ください。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zDN-co-OOe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9C-74-MYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-290"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rTA-d6-J2p">
+            <objects>
+                <viewController id="BOK-DP-VYR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ukS-Hu-tfz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SV_T" translatesAutoresizingMaskIntoConstraints="NO" id="hrs-bx-GAY">
+                                <rect key="frame" x="24" y="38" width="335" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6AQ-Y2-JLW">
+                                <rect key="frame" x="140" y="457" width="195" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">困ったなぁ…
+ここ、どこなんだろ？
+
+おかしな怪物は出るし
+変な人たちは追いかけてくるし…
+
+あの女の子、ルナちゃんのこと見つけて
+早く戻ったほうがいいよね！
+
+あっ、何か…来る！
+
+次回、グランブルーファンタジー
+
+Shadowverse
+Duelist of Eternity
+
+ご期待ください！
+
+大丈夫…私だって戦えるんだから！</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TV1" translatesAutoresizingMaskIntoConstraints="NO" id="fp3-Fq-YIx">
+                                <rect key="frame" x="49" y="457" width="83" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G9b-vm-I17">
+                                <rect key="frame" x="49" y="284" width="276" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">「災いの樹」
+
+突如として現れた謎の物体を人々はそう呼んだ
+それは、救いの象徴
+それは、終焉を導く光
+世界を覆う樹の陰が人の心に影を生む
+世界が闇で満ちたとき
+虚無への門が開かれる
+
+次回、グランブルーファンタジー
+
+Shadowverse
+Duelist of Eternity
+
+乞うご期待！</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="G2I-EY-W5s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lyB-I7-R3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="-290.10494752623691"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M0e-sc-j23">
+            <objects>
+                <viewController id="XwU-pp-6Aa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cGS-fb-0fC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BOAT_1-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nd3-NE-fpg">
+                                <rect key="frame" x="24" y="38" width="324" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sag-0A-ebM">
+                                <rect key="frame" x="140" y="457" width="195" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">焼き付く白浜、
+青く澄んだ海、
+某の死ぬ場所はここだろうか…
+
+──否。
+
+ここはまるで極楽浄土。
+某の死ぬ場所は
+煉獄に違いないのだから──
+
+次回、グランブルーファンタジー
+『薫風、白波を蹴立てる』
+ご期待ください。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BOAT_T" translatesAutoresizingMaskIntoConstraints="NO" id="kj9-kQ-GWC">
+                                <rect key="frame" x="24" y="457" width="108" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J8J-DC-t7A">
+                                <rect key="frame" x="49" y="284" width="276" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">海の恩恵によって栄えてきた島、
+アウギュステ。
+だがその恵みは
+ただ享受するだけの者には得られない。
+
+修行を超え、荒波を制し
+今、男は最強にして最高の
+海の宝に相対せんとしていた――
+
+次回！グランブルーファンタジー
+「薫風、白波を蹴立てる」
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4aZ-xd-pMj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uzu-xf-7iW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="-290.10494752623691"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BOAT_1-1" width="300" height="282.75"/>
+        <image name="BOAT_T" width="280" height="160"/>
+        <image name="FISH_1" width="300" height="249.75"/>
+        <image name="FISH_T" width="280" height="160"/>
+        <image name="IN-1" width="300" height="210.75"/>
+        <image name="LOST-1" width="450" height="236.25"/>
+        <image name="LOST_T" width="112.5" height="67.5"/>
+        <image name="SO_1" width="300" height="117.75"/>
+        <image name="SO_T" width="75" height="75"/>
+        <image name="SV_T" width="450" height="236.25"/>
+        <image name="TV1" width="60" height="60"/>
+        <image name="ban" width="960" height="800"/>
+        <image name="ban_s" width="280" height="160"/>
+        <image name="boat" width="142.5" height="75"/>
+        <image name="chan'" width="960" height="800"/>
+        <image name="chan_s" width="280" height="160"/>
+        <image name="dark" width="48" height="52"/>
+        <image name="dog" width="960" height="800"/>
+        <image name="dog_s" width="280" height="160"/>
+        <image name="dr" width="142.5" height="75"/>
+        <image name="earth" width="48" height="52"/>
+        <image name="fire" width="48" height="52"/>
+        <image name="fish" width="142.5" height="75"/>
+        <image name="in" width="142.5" height="75"/>
+        <image name="light" width="48" height="52"/>
+        <image name="lost" width="142.5" height="75"/>
+        <image name="mea" width="960" height="800"/>
+        <image name="med" width="280" height="160"/>
+        <image name="so" width="142.5" height="75"/>
+        <image name="son_s" width="280" height="160"/>
+        <image name="song" width="960" height="800"/>
+        <image name="ssr" width="60" height="60"/>
+        <image name="water" width="48" height="52"/>
+        <image name="小雅(大)" width="570" height="600"/>
+        <image name="小雅(小)" width="280" height="160"/>
+    </resources>
 </document>
